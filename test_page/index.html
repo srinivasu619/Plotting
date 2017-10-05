@@ -9,9 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/location.css">
+    <link rel="stylesheet" href="./css/gender.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
 </head>
 
 <body>
+    <!-- location card -->
     <div class="mainContainer">
         <div class="chartsContainer">
             <canvas id="lineChart" height="400" width="400"></canvas>
@@ -38,8 +43,62 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <!-- gender male card -->
+    <div class="mainContainer">
+        <div class="smallContainer">
+            <div class="appContainer">
+                <div class="symbol">
+                    <div class="sign">
+                        <img src="http://i.imgrpost.com/imgr/2017/10/04/006-man.png" alt="006-man.png" border="0">
+                    </div>
+                    <h3>MALE LITERACY</h3>
+                </div>
+                <div class="depict">
+                    <img src="http://i.imgrpost.com/imgr/2017/10/04/003-man-1.png" alt="003-man-1.png" border="0" />
+                </div>
+                <div class="categoryHeaders">
+                    <h5>Literate Male</h5>
+                    <h5>Illiterate Male</h5>
+                </div>
+                <div class="pbars">
+                    <div id="litMale" class="bars"></div>
+                    <div id="illMale" class="bars"></div>
+                </div>
+            </div>
+        </div>
+        <div class="chartsContainer">
+            <canvas id="lineChart1" height="400" width="400"></canvas>
+        </div>
+    </div>
+    <!-- gender female card -->
+    <div class="mainContainer">
+        <div class="chartsContainer">
+            <canvas id="lineChart2" height="400" width="400"></canvas>
+        </div>
+        <div class="smallContainer">
+            <div class="appContainer">
+                <div class="symbol">
+                    <div class="sign">
+                        <img src="http://i.imgrpost.com/imgr/2017/10/04/005-signs.png" alt="005-signs.png" border="0" />
+                    </div>
+                    <h3>FEMALE LITERACY</h3>
+                </div>
+                <div class="depict">
+                    <img src="http://i.imgrpost.com/imgr/2017/10/04/004-girl.png" alt="004-girl.png" border="0" />
+                </div>
+                <div class="categoryHeaders" style="width:90%;">
+                    <h5>Literate Female</h5>
+                    <h5>Illiterate Female</h5>
+                </div>
+                <div class="pbars">
+                    <div id="litFemale" class="bars"></div>
+                    <div id="illFemale" class="bars"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/chart.js"></script>
+    <script src="./js/genderbars.js"></script>
 </body>
 
 </html>

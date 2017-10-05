@@ -8,6 +8,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/location.css">
 </head>
 
 <body>
@@ -15,7 +16,27 @@
         <div class="chartsContainer">
             <canvas id="lineChart" height="400" width="400"></canvas>
         </div>
-        <div class="smallContainer"></div>
+        <div class="smallContainer">
+            <div id="appConatiner">
+                <div id="location">
+                    <div class="details">
+                        <h4>LOCATION</h4>
+                        <p>Delhi, India</p>
+                    </div>
+                    <div class="details">
+                        <h4>POPULATION DENSITY</h4>
+                        <p>29,259.12 people per square mile</p>
+                    </div>
+                    <div class="details">
+                        <h4>SEX RATIO</h4>
+                        <p>866 women:1000 men</p>
+                    </div>
+                </div>
+                <div id="map">
+                    <img src="http://i.imgrpost.com/imgr/2017/10/04/Delhi_map.png" alt="Delhi_map.png" border="0" />
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
     <script src="./js/chart.js"></script>
